@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:background="@drawable/fondo4"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/redondo2"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fernando Miramontes Alvarez"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keiry Yoseli Rodriguez Gonzalez"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escribe un texto:"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:background="@drawable/redondo"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txtContenido"
+            android:hint="Escribe texto aquí"
+            android:textColor="@color/black"
+            android:background="@drawable/redondo"
+            android:textAlignment="center"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Nombre del archivo:"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/redondo"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txtTitulo"
+            android:hint="Escribe texto aquí"
+            android:textColor="@color/black"
+            android:background="@drawable/redondo"
+            android:textAlignment="center"
+            />
+
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/grupo"
+
+            >
+
+            <RadioButton
+                android:id="@+id/rbtnInterna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elegir memoria Interna"
+                android:outlineSpotShadowColor="@color/black"
+                android:textColor="@color/black"
+                android:background="@drawable/redondo"/>
+
+            <RadioButton
+                android:id="@+id/rbtnExterna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Elegir memoria SD"
+                android:textColor="@color/black"
+                android:background="@drawable/redondo"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/redondo"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:text="Guardar"
+                android:id="@+id/btnGuardar"
+                android:layout_margin="5dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buscar"
+                android:id="@+id/btnAbrir"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner">
+
+
+        </Spinner>
+
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:padding="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
